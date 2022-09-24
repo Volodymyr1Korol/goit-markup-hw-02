@@ -1,8 +1,16 @@
 /* основной цвет background: #212121; */
+
+
 /* blue #2196F3 */
+
+
 /* secondary color background: #757575;*/
+
+
 /* white for footer 
 color: rgba(255, 255, 255, 0.6) */
+
+
 /* ------------page style ----------*/
 
 :root {
@@ -42,6 +50,7 @@ ul {
     padding-left: 0;
 }
 
+
 /* ------------LogoStyle ----------*/
 
 .home-link {
@@ -59,6 +68,7 @@ ul {
     width: 1200px;
     margin: 0 auto;
 }
+
 
 /* ------------Navigation----------*/
 
@@ -107,9 +117,9 @@ ul {
 .nav-tabs a:hover,
 .nav-tabs a:focus {
     transition: 0.5s;
-
     color: var(--prime-accent-color);
 }
+
 
 /* Contacts Style */
 
@@ -126,6 +136,7 @@ ul {
     transition: 0.5s;
     color: var(--prime-accent-color);
 }
+
 
 /* Hero SEction */
 
@@ -159,6 +170,7 @@ ul {
     color: var(--prime-title-color);
 }
 
+
 /* -----------Button------------- */
 
 .button {
@@ -177,6 +189,7 @@ ul {
     text-align: center;
     align-items: center;
 }
+
 
 /* -----info section style------ */
 
@@ -202,14 +215,13 @@ ul {
 
 .feature .title {
     color: var(--prime-title-color);
-
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 
 /* -------img section----------- */
 
@@ -219,9 +231,10 @@ ul {
     justify-content: center;
 }
 
+
 /* Team section style */
 
-.team-title .title {   
+.team-title .title {
     font-weight: 500;
     color: var(--prime-title-color);
 }
@@ -230,6 +243,7 @@ ul {
     display: flex;
     justify-content: center;
 }
+
 
 /* button */
 
@@ -243,6 +257,7 @@ ul {
     white-space: nowrap;
     text-align: center;
 }
+
 
 /* ------footer-style----------- */
 
@@ -291,9 +306,6 @@ footer-adress {
 
 .foot-adress {
     color: var(--prime-color);
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -305,7 +317,9 @@ footer-adress {
     color: var(--prime-accent-color);
 }
 
+
 /* --------PortfolioStyles-------------*/
+
 .content-box {
     display: flex;
 }
@@ -313,12 +327,29 @@ footer-adress {
 .content-list {
     display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
+.button-list {
+    width: 73px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--prime-title-color);
+    text-decoration: none;
+}
 
-
-.examples-item {
-
+.button-list a: .examples-item {
     margin: 0 auto;
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--prime-title-color)
 }

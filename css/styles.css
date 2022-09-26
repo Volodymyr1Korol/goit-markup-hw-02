@@ -32,6 +32,23 @@ color: rgba(255, 255, 255, 0.6) */
     color: var(--prime-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .list {
     list-style: none;
 }
@@ -51,6 +68,14 @@ ul {
 }
 
 
+/* HEADER_____________STYLES */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
 /* ------------LogoStyle ----------*/
 
 .home-link {
@@ -60,13 +85,6 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--prime-black-color);
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 
@@ -92,12 +110,16 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.nav-tabs a {
+.nav-tabs li:last-child {
+    margin-right: 0px;
+}
+
+.nav-tabs tab-link {
     text-decoration: none;
 }
 
-.nav-tabs a:current {
-    color: var(--prime-black-color);
+.nav-tabs .link.current {
+    color: var(--blue-color);
 }
 
 .nav-contacts {
@@ -106,7 +128,7 @@ ul {
     margin-left: auto;
 }
 
-.nav-tabs a {
+.nav-tabs .tab-link {
     color: var(--prime-title-color);
     font-weight: 500;
     font-size: 14px;
@@ -142,7 +164,8 @@ ul {
 
 .hero {
     background-color: var(--hero-color);
-    padding: 200px 0;
+    padding-top: 200px;
+    padding-bottom: 280px;
     margin-bottom: 94px;
 }
 
@@ -294,7 +317,8 @@ footer-adress {
     justify-items: center;
 }
 
-.footer-adress a {
+.foot-mail a,
+.foot-phone a {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -306,8 +330,13 @@ footer-adress {
 
 .foot-adress {
     color: var(--prime-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    /* or 171% */
+    letter-spacing: 0.03em;
 }
 
 .footer-contacts a:hover,
@@ -324,6 +353,13 @@ footer-adress {
     display: flex;
 }
 
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 3);
+    gap: 29px;
+}
+
 .content-list {
     display: flex;
     margin: 0 auto;
@@ -331,19 +367,23 @@ footer-adress {
 }
 
 .button-list {
-    width: 73px;
-    height: 38px;
-    font-weight: 500;
+    color: var(--prime-black-color);
+    cursor: pointer;
+    font-family: inherit;
+    border: transparent;
+    border-radius: 4px;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--prime-title-color);
-    text-decoration: none;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
-.button-list a: .examples-item {
-    margin: 0 auto;
+.button-list .button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+    margin: 0px;
 }
 
 .item-title {
@@ -351,5 +391,11 @@ footer-adress {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--prime-title-color)
+    color: var(--prime-title-color);
+}
+
+.examples-info {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }

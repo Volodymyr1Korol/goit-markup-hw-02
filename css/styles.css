@@ -13,7 +13,7 @@ color: rgba(255, 255, 255, 0.6) */
 
 /* ------------page style ----------*/
 
-:root {
+ :root {
     --prime-color: #ffffff;
     --hero-color: #2f303a;
     --prime-text-color: #757575;
@@ -21,6 +21,9 @@ color: rgba(255, 255, 255, 0.6) */
     --prime-accent-color: #2196f3;
     --prime-black-color: #000000;
     --footer-bg-color: #2f303a;
+    --header-border-color: #ECECEC;
+    --border-item-color: #ECECEC;
+    --grey-bc-color: #F5F4FA;
 }
 
 .page {
@@ -32,6 +35,19 @@ color: rgba(255, 255, 255, 0.6) */
     color: var(--prime-text-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.grey-bc-color {
+    background-color: var(--grey-bc-color);
+}
+
+.no-bottom-pd {
+    padding-bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +55,8 @@ h4,
 h5,
 h6,
 p {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -73,6 +90,14 @@ ul {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.link.current {
+    color: var(--prime-accent-color);
+}
+
+.page-header {
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 
@@ -114,12 +139,12 @@ ul {
     margin-right: 0px;
 }
 
-.nav-tabs tab-link {
+.nav-tabs .tab-link {
     text-decoration: none;
 }
 
 .nav-tabs .link.current {
-    color: var(--blue-color);
+    color: var(--prime-accent-color);
 }
 
 .nav-contacts {
@@ -165,8 +190,7 @@ ul {
 .hero {
     background-color: var(--hero-color);
     padding-top: 200px;
-    padding-bottom: 280px;
-    margin-bottom: 94px;
+    padding-bottom: 200px;
 }
 
 .hero-cont {
@@ -176,6 +200,9 @@ ul {
 
 .hero-title {
     color: var(--prime-color);
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -185,6 +212,7 @@ ul {
 }
 
 .section-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -202,7 +230,6 @@ ul {
     font-size: 16px;
     line-height: 1.85;
     font-weight: 700;
-    background-color: var(--prime-accent-color);
     border-radius: 4px;
     padding: 10px 32px;
     display: block;
@@ -232,8 +259,7 @@ ul {
 .feature {
     color: var(--prime-text-color);
     display: flex;
-    height: 98px;
-    padding-left: 0px;
+    gap: 30px;
 }
 
 .feature .title {
@@ -243,6 +269,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 
@@ -265,20 +292,38 @@ ul {
 .team-title {
     display: flex;
     justify-content: center;
+    gap: 30px;
+}
+
+.team-wrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-wrap .title {
+    margin-bottom: 10px;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #fff;
 }
 
 
 /* button */
 
 .button {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-style: none;
+}
+
+.hero-button {
     color: var(--prime-color);
     background-color: var(--prime-accent-color);
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
-    white-space: nowrap;
-    text-align: center;
 }
 
 
@@ -357,13 +402,14 @@ footer-adress {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 60px) / 3);
-    gap: 29px;
+    gap: 30px;
 }
 
 .content-list {
     display: flex;
-    margin: 0 auto;
-    gap: 30px;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .button-list {
@@ -378,24 +424,43 @@ footer-adress {
     letter-spacing: 0.06em;
 }
 
-.button-list .button {
+.button-list.button {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
     margin: 0px;
+    background-color: var(--bcg-color-button);
 }
 
-.item-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--prime-title-color);
+.button-list.button:hover,
+.button-list.button:focus,
+.current-all {
+    background-color: var(--prime-accent-color);
+    color: var(--prime-color);
 }
 
 .examples-info {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: var(--prime-text-color);
+}
+
+
+/* ---------WORKEXAMPLES SECTION------- */
+
+.item-border {
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-item-color);
+    border-right: 1px solid var(--border-item-color);
+    border-bottom: 1px solid var(--border-item-color);
+}
+
+.item-border .item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--prime-title-color);
 }

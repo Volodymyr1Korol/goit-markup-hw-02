@@ -16,7 +16,7 @@
 <body class="page">
     <!-- Шапка-->
     <header>
-        <div class="container">
+        <div class="container flex">
 
             <a href="./index.html" class="home-link link">
                 <span class="logo-span">Web</span>Studio
@@ -25,7 +25,7 @@
             <nav class="nav-wrap">
                 <ul class="nav-tabs list">
                     <li>
-                        <a href="./index.html" class="tab-link link">
+                        <a href="./index.html" class="tab-link link current">
                                     Студія
                                 </a>
                     </li>
@@ -66,12 +66,12 @@
         <section class="hero">
             <div class="hero-cont">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <a href="" class="button link">Замовити послугу</a>
+                <a href="" class="button hero-button">Замовити послугу</a>
             </div>
         </section>
 
         <!--InfoSection-->
-        <section class="section">
+        <section class="section no-bottom-pd">
             <div class="container">
                 <h2 class="section-title visually-hidden">Інформаційна секція</h2>
                 <ul class="feature list">
@@ -130,45 +130,53 @@
 
         </section>
         <!--Our Team-->
-        <section class="section">
+        <section class="section grey-bc-color">
             <h2 class="section-title">Наша команда</h2>
 
             <ul class="team-title list">
-                <li>
+                <li class="team-item">
                     <img src="./images/mainPageImg/img4.jpg" alt="Фото Ігоря" width="270">
-                    <h3 class="title">
-                        Ігор Дем'яненко
-                    </h3>
-                    <p>
-                        Product Designer
-                    </p>
+                    <div class="team-wrap">
+                        <h3 class="title">
+                            Ігор Дем'яненко
+                        </h3>
+                        <p>
+                            Product Designer
+                        </p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/mainPageImg/img5.jpg" alt="Фото Ольги" width="270">
-                    <h3 class="title">
-                        Ольга Рєпіна
-                    </h3>
-                    <p>
-                        Frontend Developer
-                    </p>
+                    <div class="team-wrap">
+                        <h3 class="title">
+                            Ольга Рєпіна
+                        </h3>
+                        <p>
+                            Frontend Developer
+                        </p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/mainPageImg/img6.jpg" alt="Фото Миколи" width="270">
-                    <h3 class="title">
-                        Микола Тарасов
-                    </h3>
-                    <p>
-                        Marketing
-                    </p>
+                    <div class="team-wrap">
+                        <h3 class="title">
+                            Микола Тарасов
+                        </h3>
+                        <p>
+                            Marketing
+                        </p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/mainPageImg/img7.jpg" alt="Фото Михайла" width="270">
-                    <h3 class="title">
-                        Михайло Єрмаков
-                    </h3 class="title">
-                    <p>
-                        UI Designer
-                    </p>
+                    <div class="team-wrap">
+                        <h3 class="title">
+                            Михайло Єрмаков
+                        </h3 class="title">
+                        <p>
+                            UI Designer
+                        </p>
+                    </div>
                 </li>
             </ul>
         </section>
